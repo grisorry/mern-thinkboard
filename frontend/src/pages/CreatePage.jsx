@@ -2,6 +2,7 @@ import { ArrowLeftIcon } from "lucide-react";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router";
+// eslint-disable-next-line no-unused-vars
 import {motion} from "motion/react"
 import api from "../lib/axios";
 
@@ -27,7 +28,7 @@ const CreatePage = () => {
         content
       })
       toast.success("Note created successfully.");
-      navigate("/")
+      navigate("/") //navigate to note details once made.
     } catch (error) {
       console.log("Error", error)
 
